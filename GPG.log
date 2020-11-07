@@ -1,0 +1,12 @@
+ubuntu@ubuntu:~/Desktop$ gpg --keyserver hkps://keyserver.ubuntu.com --recv-keys 24C6A8A7F4A80EB5
+gpg: key 24C6A8A7F4A80EB5: public key "CentOS-7 Key (CentOS 7 Official Signing Key) <security@centos.org>" imported
+gpg: Total number processed: 1
+gpg:               imported: 1
+ubuntu@ubuntu:~/Desktop$ gpg --verify sha256sum.txt.asc
+gpg: assuming signed data in 'sha256sum.txt'
+gpg: Signature made Wed 22 Apr 2020 01:22:33 AM UTC
+gpg:                using RSA key 24C6A8A7F4A80EB5
+gpg: Good signature from "CentOS-7 Key (CentOS 7 Official Signing Key) <security@centos.org>" [unknown]
+gpg: WARNING: This key is not certified with a trusted signature!
+gpg:          There is no indication that the signature belongs to the owner.
+Primary key fingerprint: 6341 AB27 53D7 8A78 A7C2  7BB1 24C6 A8A7 F4A8 0EB5
